@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5517ADCF-90D4-4C33-8CB3-09C212B30B1C}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Megha</RootNamespace>
+    <AssemblyName>Megha</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="About.aspx" />
+    <Content Include="AllEvents.aspx" />
+    <Content Include="Batchmates.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Layout.master" />
+    <Content Include="MyProfile.aspx" />
+    <Content Include="Photos.aspx" />
+    <Content Include="ProposeEvent.aspx" />
+    <Content Include="Searchit.aspx" />
+    <Content Include="SignIn.aspx" />
+    <Content Include="SignUpp.aspx" />
+    <Content Include="Web.Debug.config" />
+    <Content Include="YourPhotos.aspx" />
+    <Content Include="YourProfile.aspx" />
+    <Content Include="vcm_s_kf_repr_640x480.jpg" />
+    <Content Include="AllPhotos\0-0-823471_512052272180567_2056980723_o.jpg" />
+    <Content Include="AllPhotos\0-1-823471_512052272180567_2056980723_o.jpg" />
+    <Content Include="AllPhotos\1-0-823471_512052272180567_2056980723_o.jpg" />
+    <Content Include="AllPhotos\1-1-823471_512052272180567_2056980723_o.jpg" />
+    <Content Include="AllPhotos\188387_10151446392599207_732245996_n.jpg" />
+    <Content Include="AllPhotos\2012-10-23 00.11.23.jpg" />
+    <Content Include="AllPhotos\2012-12-18 13.27.31.jpg" />
+    <Content Include="AllPhotos\477970_10150890521269207_1601390690_o.jpg" />
+    <Content Include="AllPhotos\537092_10200164315884001_752191471_n.jpg" />
+    <Content Include="AllPhotos\8_funny_scrap-980.jpg" />
+    <Content Include="AllPhotos\942090_468236946604088_236041014_n.jpg" />
+    <Content Include="AllPhotos\photos 130.jpg" />
+    <Content Include="Image\46768_3805303790093_1504659924_n.jpg" />
+    <Content Include="Image\526615_438018182951163_1521980375_n.jpg" />
+    <Content Include="Image\8_funny_scrap-980.jpg" />
+    <Content Include="Image\942090_468236946604088_236041014_n.jpg" />
+    <Content Include="Image\BLAHBA.jpg" />
+    <Content Include="Image\as.jpg" />
+    <Content Include="Image\back.jpg" />
+    <Content Include="Image\images %283%29%281%29.jpg" />
+    <Content Include="Image\images %286%29.jpg" />
+    <Content Include="Image\images.jpg" />
+    <Content Include="Image\search.jpg" />
+    <Content Include="Image\simple-backgroundnew-backgrounds-hd-pictures-hd-wallpapers-uk-hue7d00c.jpg" />
+    <Content Include="Image\wood-2.jpg" />
+    <Content Include="Image\wood.jpg" />
+    <Content Include="ProfilePics\0-0-823471_512052272180567_2056980723_o.jpg" />
+    <Content Include="ProfilePics\0-1-823471_512052272180567_2056980723_o.jpg" />
+    <Content Include="ProfilePics\1-0-823471_512052272180567_2056980723_o.jpg" />
+    <Content Include="ProfilePics\1-1-823471_512052272180567_2056980723_o.jpg" />
+    <Content Include="ProfilePics\2012-10-21 20.15.40.jpg" />
+    <Content Include="ProfilePics\2012-12-18 13.40.16.jpg" />
+    <Content Include="ProfilePics\401810_442399259184387_1378125843_n.jpg" />
+    <Content Include="ProfilePics\537092_10200164315884001_752191471_n.jpg" />
+    <Content Include="ProfilePics\581100_3767074088777_1457854178_n.jpg" />
+    <Content Include="ProfilePics\851580_641023045913307_1457033031_n.png" />
+    <Content Include="ProfilePics\8_funny_scrap-980.jpg" />
+    <Content Include="ProfilePics\942090_468236946604088_236041014_n.jpg" />
+    <Content Include="ProfilePics\S01E04 Can You Hear Me Now.avi_snapshot_00.12_[2013.09.05_18.20.07].jpg" />
+    <Content Include="ProfilePics\download.jpg" />
+    <Content Include="ProfilePics\images %281%29.jpg" />
+    <Content Include="ProfilePics\images %282%29.jpg" />
+    <Content Include="ProfilePics\images.jpg" />
+    <Content Include="ProfilePics\photos 130.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllEvents.aspx.cs">
+      <DependentUpon>AllEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Batchmates.aspx.cs">
+      <DependentUpon>Batchmates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout.master.cs">
+      <DependentUpon>Layout.master</DependentUpon>
+    </Compile>
+    <Compile Include="MyProfile.aspx.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Photos.aspx.cs">
+      <DependentUpon>Photos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProposeEvent.aspx.cs">
+      <DependentUpon>ProposeEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Searchit.aspx.cs">
+      <DependentUpon>Searchit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpp.aspx.cs">
+      <DependentUpon>SignUpp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YourPhotos.aspx.cs">
+      <DependentUpon>YourPhotos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YourProfile.aspx.cs">
+      <DependentUpon>YourProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Libraary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\PublishProfiles\Almuni.pubxml" />
+    <None Include="Bin\AjaxControlToolkit.dll" />
+    <None Include="Bin\AjaxControlToolkit.dll.refresh" />
+    <None Include="Bin\AjaxControlToolkit.pdb" />
+    <None Include="Bin\ar\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\cs\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\de\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\es\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\fr\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\he\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\hi\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\it\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\ja\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\ko\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\nl\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\pt\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\ru\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\tr-TR\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\zh-CHS\AjaxControlToolkit.resources.dll" />
+    <None Include="Bin\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <None Include="Image\.picasa.ini" />
+    <None Include="Image\123s4.jpeg" />
+    <None Include="Image\background1.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

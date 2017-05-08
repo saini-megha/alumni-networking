@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Layout.master.cs" Inherits="Layout" %>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+    </title>
+     
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+    <style type="text/css">
+       table
+       {
+            color:black; font-size:x-large;font-family:Candara;
+       }
+       </style>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style3 {
+            height: 26px;
+        }
+        .auto-style4 {
+        }
+        .auto-style6 {
+            height: 41px;
+        }
+        .auto-style8 {
+            height: 40px;
+        }
+        .auto-style9 {
+            height: 126px;
+        }
+        .auto-style10 {
+            height: 6px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <div>
+        <table align="center" class="auto-style1" style="background-position: -6cm; margin-right: 0px; background-image: url('/Almuni/Image/123s4.jpeg'); background-repeat: repeat;">
+            <tr>
+                <td font-size: 75px; color: #FFFFFF; font-family: 'Buxton Sketch'; " aria-dropeffect="popup" aria-expanded="true" aria-grabbed="true" aria-haspopup="True" aria-hidden="True" class="auto-style9" colspan="2" style="background-position: 4px -168px; background-image: url('/Almuni/Image/123s4.jpeg'); font-size: 85px; font-family: 'Buxton Sketch';">Reliving Memories..</tr>
+            <tr>
+                <td class="auto-style10" style="background-position: center -10cm; text-align: left; background-image: url('/Almuni/Image/123s4.jpeg');" colspan="2">
+                    <asp:Menu ID="MainMenu" runat="server" ForeColor="White" Orientation="Horizontal" Width="100%" BackColor="#006699" Font-Bold="True" BorderColor="Black" BorderStyle="Solid">
+                        <DynamicHoverStyle BackColor="#006699" />
+                        <DynamicMenuStyle BackColor="#006699" />
+                        <Items>
+                            <asp:MenuItem NavigateUrl="Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem Text="Profile" Value="Profile" NavigateUrl="MyProfile.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Searchit.aspx" Text="Search" Value="Search"></asp:MenuItem>
+                            <asp:MenuItem Text="Photos" Value="Photos" NavigateUrl="~/Photos.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Events" Value="Events">
+                                <asp:MenuItem NavigateUrl="~/ProposeEvent.aspx" Text="Create Event" Value="Create Event"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/AllEvents.aspx" Text="View Events" Value="View Events"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Batchmates" Value="Batchmates" NavigateUrl="~/Batchmates.aspx"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#009999" />
+                        <StaticMenuItemStyle BorderColor="#006699" />
+                        <StaticMenuStyle BackColor="#006699" />
+                        <StaticSelectedStyle BackColor="#006699" Font-Size="Large" />
+                    </asp:Menu>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style6" style="background-color: #808080; ">
+                    &nbsp;<asp:Label ID="lblwelcome" runat="server" ForeColor="White" Font-Bold="True"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp; </td>
+                <td class="auto-style6" style="background-color: #808080; ">
+                    &nbsp;
+                    <asp:LinkButton ID="lblfreezeout" runat="server" Font-Underline="False" ForeColor="White" OnClick="lblfreezeout_Click" Font-Bold="True">Freeze Out</asp:LinkButton>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style4" colspan="2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style8" colspan="2">
+                    <asp:LinkButton ID="ContactUs" runat="server" BorderStyle="None" ForeColor="Black" OnClick="ContactUs_Click" Font-Underline="False">Contact Us</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:LinkButton ID="FAQ" runat="server" ForeColor="Black" Font-Underline="False">FAQ</asp:LinkButton>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;<asp:LinkButton ID="feedback" runat="server" ForeColor="Black" Font-Underline="False">Feedback</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:LinkButton ID="AboutUs" runat="server" ForeColor="Black" OnClick="AboutUs_Click" Font-Underline="False">About Us</asp:LinkButton>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton ID="terms" runat="server" ForeColor="Black" Font-Underline="False">T&amp;C</asp:LinkButton>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+            </tr>
+            <tr>
+                <td class="auto-style3" colspan="2"></td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    </form>
+</body>
+</html>
